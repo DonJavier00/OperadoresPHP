@@ -106,13 +106,13 @@
         $a = 5;
         //Ahora la variable a vale 5
 
-        echo "$a <br>";
+        echo "El valor de a es: $a <br>";
         //b)
         $a = ($b = 4) + 5;
 
         //Ahora a es igual a 9 y b es igual a 4
 
-        echo "$a <br>";
+        echo "El valor de a es: $a <br>";
 
         //Tambien contamos con operadores combinados para todos los de aritmetica binaria,
         //union de de arrays y operadores de strings que permiten usar un valor en una expresion y entonces
@@ -120,7 +120,7 @@
 
         $a = 3;
         $a += 5; 
-        echo $a;
+        echo "El valor de a ahora es: $a";
         echo "<br>";
         // establece $a en 8, como si se hubiera dicho: $a = $a + 5
         
@@ -136,14 +136,14 @@
         $a = 3;
         $b = &$a; // $b es una referencia para $a
         
-        print "$a <br>"; // muestra 3
-        print "$b <br>"; // muestra 3
+        print "Ahora a vale: $a <br>"; // muestra 3
+        print "Ahora b vale: $b <br>"; // muestra 3
         
         $a = 6; // cambia $a
         
-        print "$a <br>"; // muestra 4
-        print "$b <br>"; // muestra 4 también, dado que $b es una referencia para $a, la cual ha
-                        // sido cambiada
+        print "Ahora a vale: $a <br>"; // muestra 6
+        print "Ahora b vale: $b <br>"; // muestra 6 también, dado que $b es una referencia para $a, la cual ha
+                                        // sido cambiada
 
 
         //3. OPERADORES DE COMPARACION
@@ -152,46 +152,63 @@
         $numero1 = 20;
         $numero2 = "19";
 
+        echo "¿El numero 1 es igual al numero 2?";
+        echo "<br>";
         var_dump($numero1 == $numero2);
         echo "<br>";
 
         //b) Operador identico
 
+        echo "¿El numero 1 es identico al numero 2?";
+        echo "<br>";
         var_dump($numero1 === $numero2);
         echo "<br>";
 
         //c) Operador diferente
-
+        
+        echo "¿El numero 1 es diferente al numero 2?";
+        echo "<br>";
         var_dump($numero1 != $numero2);
         echo "<br>";
 
         //d) Operador no identico
 
+        echo "¿El numero 1 es no identico al numero 2?";
+        echo "<br>";
         var_dump($numero1 !== $numero2);
         echo "<br>";
 
         //e) Operador mayor que 
 
+        echo "¿El numero 1 es mayor al numero 2?";
+        echo "<br>";
         var_dump($numero1 > $numero2);
         echo "<br>";
 
         //f) Operador menor que
 
+        echo "¿El numero 1 es menor que el numero 2?";
+        echo "<br>";
         var_dump($numero1 < $numero2);
         echo "<br>";
 
         //g) Mayor o igual que 
 
+        echo "¿El numero 1 es mayor o igual que el numero 2?";
+        echo "<br>";
         var_dump($numero1 >= $numero2);
         echo "<br>";
         
         //h) Menor o igual que 
 
+        echo "¿El numero 1 es menor o igual que el numero 2?";
+        echo "<br>";
         var_dump($numero1 <= $numero2);
         echo "<br>";
 
         //i) Operador de nave espacial 
-
+        echo "Operador nave espacial";
+        echo "<br>";
         var_dump($numero1 <=> $numero2);
         var_dump($numero2 <=> $numero1);
         var_dump($numero2 <=> $numero2);
@@ -199,8 +216,9 @@
 
         //j) Operador elvis
 
+        echo "Operador de Elvis";  
+        echo "<br>";      
         $resultado = true; 
-
         var_dump($resultado ?: 'No hay datos');
         echo "<br>";
 
@@ -209,11 +227,16 @@
 
         //k) Operador ternario
 
+        echo "Operador ternario";
+        echo "<br>";
+        echo "¿El valor de la variable resultado es true o falso?";
+        echo "<br>";
         var_dump($resultado ? 'Verdadero' : 'Falso');
         echo "<br>";
 
         //l) Operador de funsion null
-
+        echo "Operador de funsion null";
+        echo "<br>";
         var_dump($resultado ?? 'No hay datos');
         echo "<br>";
 

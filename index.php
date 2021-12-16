@@ -234,8 +234,8 @@
         var_dump($resultado ? 'Verdadero' : 'Falso');
         echo "<br>";
 
-        //l) Operador de funsion null
-        echo "Operador de funsion null";
+        //l) Operador de fusion null
+        echo "Operador de fusion null";
         echo "<br>";
         var_dump($resultado ?? 'No hay datos');
         echo "<br>";

@@ -1,22 +1,4 @@
 <?php   
-        /*
-        // Para imprimir se usa el comando echo
-        echo "Hola mundo <br>";
-        // Para definir una variable se usa $ seguido del nombre de la variable
-        $nombre = "Javier Andres Sanchez <br>";
-        echo "Mi nombre es " . $nombre;
-        // PHP nos permite usar enteros y decimales 
-        $numero = 3.1416;
-        echo " El numero es : $numero <br>"; 
-        // Para definir una cadena o string se coloca el texto en comillas simples o dobles
-        $string = 'Hola nuevamente <br>';
-        echo " La cadena almacenada es: $string <br>";
-        // El true en un dato booleano vale 1
-        $bool = true;
-        echo "$bool <br>";
-        */
-
-
 
         //Pruebas de la exposicion 
         //PRECEDENCIA DE OPERADORES
